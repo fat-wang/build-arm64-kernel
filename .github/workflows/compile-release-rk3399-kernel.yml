@@ -136,7 +136,7 @@ jobs:
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Compile the kernel [ ${{ inputs.kernel_version }} ]
-        uses: fat-wang/build-arm64-kernel@rk3399-5.10-offical
+        uses: fat-wang/arm64-armbian-builder@main
         if: ${{ steps.mapped.outputs.status }} == 'success' && !cancelled()
         with:
           build_target: kernel
