@@ -13,10 +13,11 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "fat-wang/rk3399-5.10"
+        default: "fat-wang/rockchip-5.10-from-unifreq"
         type: choice
         options:
-          - fat-wang/rk3399-5.10
+          - fat-wang/rockchip-5.10-from-unifreq
+          - fat-wang/rockchip-5.10-from-offical
       kernel_version:
         description: "Select kernel version"
         required: false
@@ -57,19 +58,20 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-pikvm"
+        default: "-flippy-pikvm"
         type: choice
         options:
           - -rockchip-offical
-          - -pikvm
+          - -flippy-pikvm
           - -yourname
       kernel_config:
         description: "Set the path of kernel .config"
         required: false
-        default: "kernel-config/release/rk3399"
+        default: "kernel-config/release/rk3399-flippy"
         type: choice
         options:
-          - kernel-config/release/rk3399
+          - kernel-config/release/rk3399-flippy
+          - kernel-config/release/rk3399-offical
           - false
 
 env:
@@ -159,5 +161,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             - The kernel can be used to compile Armbian and OpenWrt.
-            - The kernel source code comes from: fat-wang/rk3399-5.10
             - The kernel compilation toolchain: gcc
