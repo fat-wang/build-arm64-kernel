@@ -61,7 +61,7 @@ on:
         default: "-flippy-pikvm"
         type: choice
         options:
-          - -rockchip-offical
+          - -rockchip-pikvm
           - -flippy-pikvm
           - -yourname
       kernel_config:
