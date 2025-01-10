@@ -1,6 +1,3 @@
-> [!NOTE]
-> 自 `2024 年 3 月 8 日` 起，由于内核中 `/boot/vmlinuz-xxx` 文件从 `32MB` 调整到了 `64MB`，`晶晨（Amlogic）`系列盒子必须更新系统启动引导文件，否则更新内核后系统将无法启动。[Armbian](https://github.com/ophub/amlogic-s9xxx-armbian) 和 [OpenWrt](https://github.com/ophub/amlogic-s9xxx-openwrt) 系统的更新方法详见各仓库首页文档顶部的提示信息。
-
 # 内核说明
 
 查看英文说明 | [View English description](README.md)
@@ -44,7 +41,9 @@
 | [kernel_rk3588](https://github.com/ophub/kernel/releases/tag/kernel_rk3588) | [unifreq/linux-5.10.y-rk35xx](https://github.com/unifreq/linux-5.10.y-rk35xx) | Rockchip-RK3588 |
 | [kernel_rk35xx](https://github.com/ophub/kernel/releases/tag/kernel_rk35xx) | [unifreq/linux-5.10.y-rk35xx](https://github.com/unifreq/linux-5.10.y-rk35xx) | Rockchip-RK3528/RK3566/RK3568 |
 | [kernel_h6](https://github.com/ophub/kernel/releases/tag/kernel_h6) | [13584452567/linux-6.4.y](https://github.com/13584452567/linux-6.4.y)<br>[13584452567/linux-6.5.y](https://github.com/13584452567/linux-6.5.y)<br>[13584452567/linux-6.6.y](https://github.com/13584452567/linux-6.6.y) | Allwinner-H6(TQC-A01) |
-| [kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable)<br>[kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev)<br>[kernel_h6](https://github.com/ophub/kernel/releases/tag/kernel_h6) | [codesnas/linux-xxx](https://github.com/codesnas) | 内核源码复制自 [unifreq](https://github.com/unifreq), [13584452567](https://github.com/13584452567) 和 [chewitt](https://github.com/chewitt/linux) 的仓库，<br>便于跟随大佬们学习如何给内核打补丁。 |
+| [kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable)<br>[kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev)<br>[kernel_h6](https://github.com/ophub/kernel/releases/tag/kernel_h6)<br>[kernel_rk3588](https://github.com/ophub/kernel/releases/tag/kernel_rk3588)<br>[kernel_rk35xx](https://github.com/ophub/kernel/releases/tag/kernel_rk35xx) | [codesnas/linux-5.4.y](https://github.com/codesnas/linux-5.4.y)<br>[codesnas/linux-5.10.y](https://github.com/codesnas/linux-5.10.y)<br>[codesnas/linux-5.15.y](https://github.com/codesnas/linux-5.15.y)<br>[codesnas/linux-6.1.y](https://github.com/codesnas/linux-6.1.y)<br>[codesnas/linux-6.6.y](https://github.com/codesnas/linux-6.6.y)<br>[codesnas/linux-h6-6.6.y](https://github.com/codesnas/linux-h6-6.6.y)<br>[codesnas/linux-5.10.y-rk35xx](https://github.com/codesnas/linux-5.10.y-rk35xx) | 内核源码复制自 [unifreq](https://github.com/unifreq), [13584452567](https://github.com/13584452567) 和 [chewitt](https://github.com/chewitt/linux) 的仓库，<br>便于跟随大佬们学习如何给内核打补丁。 |
+| [kernel_rk3588](https://github.com/ophub/kernel/releases/tag/kernel_rk3588) | [armbian/linux-rockchip](https://github.com/armbian/linux-rockchip) | Rockchip-Beta(6.1.y) |
+| [kernel_rk35xx](https://github.com/ophub/kernel/releases/tag/kernel_rk35xx) | [armbian/linux-rockchip](https://github.com/armbian/linux-rockchip) | Rockchip-Beta(6.1.y) |
 
 
 ## 链接
