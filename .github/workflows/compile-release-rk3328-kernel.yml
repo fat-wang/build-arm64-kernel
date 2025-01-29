@@ -54,10 +54,9 @@ on:
       compress_format:
         description: "Set the initrd compression format"
         required: false
-        default: "none"
+        default: "xz"
         type: choice
         options:
-          - none
           - xz
           - gzip
           - zstd
